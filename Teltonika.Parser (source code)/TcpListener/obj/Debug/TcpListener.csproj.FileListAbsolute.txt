@@ -1,0 +1,12 @@
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\TcpListenerApp.exe.config
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\TcpListenerApp.exe
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\TcpListenerApp.pdb
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\log4net.dll
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\Teltonika.Codec.dll
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\Teltonika.Codec.pdb
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\bin\Debug\log4net.xml
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\obj\Debug\TcpListener.csproj.AssemblyReference.cache
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\obj\Debug\TcpListener.csproj.CoreCompileInputs.cache
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\obj\Debug\TcpListe.7045E7AD.Up2Date
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\obj\Debug\TcpListenerApp.exe
+C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\TcpListener\obj\Debug\TcpListenerApp.pdb
