@@ -1,0 +1,102 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\TcpListener.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\TcpListener.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\TcpListener.csproj",
+        "projectName": "TcpListenerApp",
+        "projectPath": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\TcpListener.csproj",
+        "packagesPath": "C:\\Users\\PeterBriesch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PeterBriesch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\Teltonika.Codec\\Teltonika.Codec.csproj": {
+                "projectPath": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\Teltonika.Codec\\Teltonika.Codec.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SystemWebAdapters": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\Teltonika.Codec\\Teltonika.Codec.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\Teltonika.Codec\\Teltonika.Codec.csproj",
+        "projectName": "Teltonika.Codec",
+        "projectPath": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\Teltonika.Codec\\Teltonika.Codec.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

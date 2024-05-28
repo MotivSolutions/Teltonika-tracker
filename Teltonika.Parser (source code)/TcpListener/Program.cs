@@ -15,6 +15,8 @@ namespace TcpListenerApp
 
         private static void Main()
         {
+            System.Text.Encoding.RegisterProvider(
+                System.Text.CodePagesEncodingProvider.Instance);
             XmlConfigurator.Configure();
 
             TcpServerAsync().Wait();

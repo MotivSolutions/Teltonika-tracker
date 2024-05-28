@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5C457B5-FA2A-4629-B212-4BF54C023A72}|TcpListener\\TcpListener.csproj|c:\\users\\peterbriesch\\dev\\code\\teltonika-tracker\\teltonika.parser (source code)\\tcplistener\\tcpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C457B5-FA2A-4629-B212-4BF54C023A72}|TcpListener\\TcpListener.csproj|solutionrelative:tcplistener\\tcpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D5C457B5-FA2A-4629-B212-4BF54C023A72}|TcpListener\\TcpListener.csproj|c:\\users\\peterbriesch\\dev\\code\\teltonika-tracker\\teltonika.parser (source code)\\tcplistener\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5C457B5-FA2A-4629-B212-4BF54C023A72}|TcpListener\\TcpListener.csproj|solutionrelative:tcplistener\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C457B5-FA2A-4629-B212-4BF54C023A72}|TcpListener\\TcpListener.csproj|c:\\users\\peterbriesch\\dev\\code\\teltonika-tracker\\teltonika.parser (source code)\\tcplistener\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D5C457B5-FA2A-4629-B212-4BF54C023A72}|TcpListener\\TcpListener.csproj|solutionrelative:tcplistener\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,41 +59,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TcpClientService.cs",
-              "DocumentMoniker": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\TcpClientService.cs",
-              "RelativeDocumentMoniker": "TcpListener\\TcpClientService.cs",
-              "ToolTip": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\TcpClientService.cs",
-              "RelativeToolTip": "TcpListener\\TcpClientService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T02:58:22.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\App.config",
-              "RelativeDocumentMoniker": "TcpListener\\App.config",
-              "ToolTip": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\App.config",
-              "RelativeToolTip": "TcpListener\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-28T02:53:40.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\Program.cs",
               "RelativeDocumentMoniker": "TcpListener\\Program.cs",
               "ToolTip": "C:\\Users\\PeterBriesch\\dev\\code\\Teltonika-tracker\\Teltonika.Parser (source code)\\TcpListener\\Program.cs",
               "RelativeToolTip": "TcpListener\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxIAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T02:53:09.45Z",
+              "WhenOpened": "2024-05-28T03:41:06.82Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{7f40df72-066b-4810-a08b-c0fbed76c948}"
             }
           ]
         }
