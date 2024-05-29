@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "TcpListener": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "OPLEX_SERVER": "https://beta.motiv.io",
+        "DEVICE_KEY": "AABBCCDD11223344"
+      }
+    }
+  }
+}
