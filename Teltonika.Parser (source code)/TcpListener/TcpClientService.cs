@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Sockets;
+using System.Text.Json;
 using System.Threading.Tasks;
-using log4net;
 using Teltonika.Codec;
 using Teltonika.Codec.Model;
 
@@ -12,11 +12,12 @@ namespace TcpListenerApp
 {
     public class TcpClientService
     {
-        private static readonly ILog Log = LogManager.GetLogger("");
         readonly TcpClient _client;
+        readonly OplexClient _httpClient;
 
-        public TcpClientService(TcpClient client)
+        public TcpClientService(TcpClient client, OplexClient httpClient)
         {
+            _httpClient = httpClient;
             _client = client;
         }
 
@@ -25,7 +26,7 @@ namespace TcpListenerApp
             using (_client)
             using (var stream = _client.GetStream())
             {
-                Log.Info(DateTime.Now + " Received connection request from " + _client.Client.RemoteEndPoint);
+                Console.WriteLine(DateTime.Now + " Received connection request from " + _client.Client.RemoteEndPoint);
 
                 var fullPacket = new List<byte>();
                 int? avlDataLength = null;
@@ -37,7 +38,7 @@ namespace TcpListenerApp
                 // Loop to receive all the data sent by the client.
                 while ((length = await stream.ReadAsync(bytes, 0, bytes.Length)) != 0)
                 {
-                    Log.Info(string.Format("{0} - received [{1}]", DateTime.Now, String.Join("", bytes.Take(length).Select(x => x.ToString("X2")).ToArray())));
+                    Console.WriteLine(string.Format("{0} - received [{1}]", DateTime.Now, String.Join("", bytes.Take(length).Select(x => x.ToString("X2")).ToArray())));
 
                     byte[] response;
 
@@ -50,7 +51,7 @@ namespace TcpListenerApp
 
                         Array.Clear(bytes, 0, bytes.Length);
 
-                        Log.Info(string.Format("{0} - responded [{1}]", DateTime.Now, String.Join("", response.Select(x => x.ToString("X2")).ToArray())));
+                        Console.WriteLine(string.Format("{0} - responded [{1}]", DateTime.Now, String.Join("", response.Select(x => x.ToString("X2")).ToArray())));
                     }
                     else
                     {
@@ -67,7 +68,7 @@ namespace TcpListenerApp
                         var packetLength = 8 + avlDataLength + 4;
                         if (count > packetLength)
                         {
-                            Log.Error("Too much data received.");
+                            Console.WriteLine("Too much data received.");
                             throw new ArgumentException("Too much data received.");
                         }
                         // continue if not all data received
@@ -75,14 +76,20 @@ namespace TcpListenerApp
 
                         // Decode tcp packet
                         var decodedData = DecodeTcpPacket(fullPacket.ToArray());
+
+                        //Console.WriteLine($"Decoded Data: {JsonSerializer.Serialize(decodedData.AvlData)}");
+                        // Send data to Oplex
+                        await _httpClient.Publish(decodedData.AvlData.Data.First().IoElement.Properties.First(x => x.Id == 218).Value.ToString(), JsonSerializer.Serialize(decodedData));
+
                         response = BitConverter.GetBytes(BytesSwapper.Swap(decodedData.AvlData.DataCount));
+
 
                         await stream.WriteAsync(response, 0, response.Length);
 
                         avlDataLength = null;
                         fullPacket.Clear();
 
-                        Log.Info(string.Format("{0} - responded [{1}]", DateTime.Now, String.Join("", response.Select(x => x.ToString("X2")).ToArray())));
+                        Console.WriteLine(string.Format("{0} - responded [{1}]", DateTime.Now, String.Join("", response.Select(x => x.ToString("X2")).ToArray())));
                     }
                 }
             }

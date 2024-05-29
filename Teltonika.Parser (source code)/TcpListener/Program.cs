@@ -4,27 +4,22 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using log4net;
-using log4net.Config;
 
 namespace TcpListenerApp
 {
     public class Program
     {
-        private static readonly ILog Log = LogManager.GetLogger("");
 
         private static void Main()
         {
-            System.Text.Encoding.RegisterProvider(
-                System.Text.CodePagesEncodingProvider.Instance);
-            XmlConfigurator.Configure();
-
             TcpServerAsync().Wait();
         }
 
         private static async Task TcpServerAsync()
         {
             IPAddress ip;
+            var oplexServerAddress = Environment.GetEnvironmentVariable("OPLEX_SERVER");
+
             if (!IPAddress.TryParse(ConfigurationManager.AppSettings["ipAddress"], out ip))
             {
                 Console.WriteLine("Failed to get IP address, service will listen for client activity on all network interfaces.");
@@ -37,15 +32,18 @@ namespace TcpListenerApp
                 throw new ArgumentException("Port is not valid.");
             }
 
-            Log.Info("Starting listener...");
+            Console.WriteLine("Starting listener...");
             var server = new TcpListener(ip, port);
-
             server.Start();
-            Log.Info("Listening...");
+            Console.WriteLine("Listening...");
+            Console.WriteLine("Starting HttpClient...");
+
+            var httpClient = new OplexClient(oplexServerAddress);
+
             while (true)
             {
                 TcpClient client = await server.AcceptTcpClientAsync();
-                var cw = new TcpClientService(client);
+                var cw = new TcpClientService(client, httpClient);
                 ThreadPool.UnsafeQueueUserWorkItem(x => ((TcpClientService) x).Run(), cw);
             }
         }
