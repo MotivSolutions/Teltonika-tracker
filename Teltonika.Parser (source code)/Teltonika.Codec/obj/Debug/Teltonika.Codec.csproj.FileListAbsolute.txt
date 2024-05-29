@@ -1,6 +1,0 @@
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\Teltonika.Codec\bin\Debug\Teltonika.Codec.dll
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\Teltonika.Codec\bin\Debug\Teltonika.Codec.pdb
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\Teltonika.Codec\obj\Debug\Teltonika.Codec.csproj.AssemblyReference.cache
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\Teltonika.Codec\obj\Debug\Teltonika.Codec.csproj.CoreCompileInputs.cache
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\Teltonika.Codec\obj\Debug\Teltonika.Codec.dll
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\Teltonika.Codec\obj\Debug\Teltonika.Codec.pdb

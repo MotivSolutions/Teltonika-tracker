@@ -1,2 +1,0 @@
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\UdpListener\obj\Debug\UdpListener.csproj.AssemblyReference.cache
-C:\Users\PeterBriesch\dev\code\Teltonika-tracker\Teltonika.Parser (source code)\UdpListener\obj\Debug\UdpListener.csproj.CoreCompileInputs.cache
